@@ -33,7 +33,7 @@ Here are all the services actively running to make it all works:
 
 Probably pretty obvious. Everything in this setup runs in a container.
 
-### [Home Assistant](https://github.com/homeassistant/homeassistant)
+### [Home Assistant](https://github.com/home-assistant/home-assistant)
 
 Home Assistant is the central point where all endpoints integrate with and where all "triggers" are stored.
 
