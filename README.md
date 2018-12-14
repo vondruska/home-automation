@@ -2,7 +2,7 @@
 
 There is a decent amount of home automation running at the Vondruska house. This repo has an overview of all of it and (eventually) includes the `docker-compose.yaml` which brings it up.
 
-I use GitLab for my Git repositories. I'm also replicating my public repos onto GitHub for seemingly obvious reasons.
+I use GitLab CI to build and deploy as needed.
 
 
 ## Golden Rule / Driver
@@ -37,9 +37,11 @@ Probably pretty obvious. Everything in this setup runs in a container.
 
 Home Assistant is the central point where all endpoints integrate with and where all "triggers" are stored.
 
+Configuration is source controlled and uses GitLab CI to test the configuration before it gets pulled into instance.
+
 ### [Mostquito](https://mosquitto.org/)
 
-[MQTT](http://mqtt.org) broker. This allows the Sonoff outlets and the hard wired security system to push messages to Home Assistant.
+[MQTT](http://mqtt.org) broker. This allows the Sonoff outlets and the hard wired security system to push messages to Home Assistant in a decoupled way.
 
 ### pc1550-xbee-bridge
 
@@ -49,6 +51,12 @@ Changes in security system state are transmitted via Xbee by a Arduino connected
 
 This was all made possible by the fine work at https://github.com/dougkpowers/pc1550-interface.
 
-The Arduino sketch source repository: https://gitlab.com/vondruska/pc1550-arduino
+The Arduino sketch source repository: https://github.com/vondruska/pc1550-arduino
 
 I'll open source the node app once I remove the secrets from the repo.
+
+### homeassistant-config-updater (work in progress)
+
+This is a work in progress. This is a service that will listen to webhooks allowing for continuious delivery of the Home Assistant configuration from GitLab.
+
+Current work is based upon https://github.com/vondruska/docker-webhook-script-runner and https://hub.docker.com/r/vondruska/webhook-script-runner.
