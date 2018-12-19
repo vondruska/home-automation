@@ -5,7 +5,7 @@ There is a decent amount of home automation running at the Vondruska house. This
 I use GitLab CI to build and deploy as needed.
 
 
-## Golden Rule / Driver
+## Goals
 No 100% reliance on cloud services unless absolutely necessary. Operations should function should function when an external connection is unavailable (internet down, cloud provider is having a bad day, etc.). That being said the cloud can provide convenience so during an external outage, it could be slightly more challenging to complete a task (i.e. Google Home would have problems when the internet is down but we can execute the task by using the Home Assistant web interface)
 
 ## Devices used
@@ -14,6 +14,7 @@ This may not be an exhaustive list
 
 1. [Sonoff S20](https://www.itead.cc/smart-socket.html) flashed with [Sonoff-Tasmota](https://github.com/arendst/Sonoff-Tasmota)
 1. [Philips Hue](https://www.meethue.com)
+1. [Ecobee 3](https://www.ecobee.com) with multiple [room sensors](https://www.ecobee.com/room-sensors/)
 1. [Google Home and Google Home Mini](https://www.google.com/home)
 1. [Aeotec Z-Stick Gen5](https://aeotec.com/z-wave-usb-stick)
 1. Aeotec Z-Wave dry contact sensor
