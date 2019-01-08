@@ -54,8 +54,8 @@ This was all made possible by the fine work at https://github.com/dougkpowers/pc
 
 The Arduino sketch source repository: https://github.com/vondruska/pc1550-arduino
 
-### homeassistant-config-updater (work in progress)
+### [home-assistant-config-puller](https://github.com/vondruska/home-assistant-config-puller)
 
-This is a work in progress. This is a service that will listen to webhooks allowing for continuious delivery of the Home Assistant configuration from GitLab.
+This is a service that will listen to webhooks allowing for continuious delivery of the Home Assistant configuration from GitLab.
 
 Current work is based upon https://github.com/vondruska/docker-webhook-script-runner and https://hub.docker.com/r/vondruska/webhook-script-runner.
