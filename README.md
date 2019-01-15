@@ -44,7 +44,7 @@ Configuration is source controlled and uses GitLab CI to test the configuration 
 
 [MQTT](http://mqtt.org) broker. This allows the Sonoff outlets and the hard wired security system to push messages to Home Assistant in a decoupled way.
 
-### [pc1550-xbee-bridge](https://github.com/vondruska/pc1550-xbee-bridge)
+### [pc1550-xbee-bridge](/vondruska/pc1550-xbee-bridge)
 
 Node app listening for events from the hard wired home security system and publishes this via MQTTT for Home Assistant to act upon.
 
@@ -54,7 +54,7 @@ This was all made possible by the fine work at https://github.com/dougkpowers/pc
 
 The Arduino sketch source repository: https://github.com/vondruska/pc1550-arduino
 
-### [home-assistant-config-puller](https://github.com/vondruska/home-assistant-config-puller)
+### [home-assistant-config-puller](/vondruska/home-assistant-config-puller)
 
 This is a service that will listen to webhooks allowing for continuious delivery of the Home Assistant configuration from GitLab.
 
