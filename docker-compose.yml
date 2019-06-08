@@ -29,3 +29,16 @@ services:
       - "/etc/localtime:/etc/localtime:ro"
       - "/opt/homeassistant:/config"
     restart: unless-stopped
+
+  nodered:
+    image: raymondmm/node-red:latest
+    environment:
+      - TZ="America_NewYork"
+    volumes:
+      - "/opt/nodered:/data"
+      - "/etc/timezone:/etc/timezone:ro"
+      - "/etc/localtime:/etc/localtime:ro"
+    ports:
+      - "1880:1880"
+    user: "1000:1000"
+    restart: unless-stopped
