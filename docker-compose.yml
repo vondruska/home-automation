@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   345securitymqtt:
-    image: registry.gitlab.com/vondruska/345securitymqtt:latest
+    image: vondruska/345securitymqtt:latest
     devices:
       - "/dev/bus/usb:/dev/bus/usb"
     env_file: mqtt.env
@@ -21,7 +21,7 @@ services:
 
 
   homeassistant:
-    image: homeassistant/raspberrypi3-homeassistant:0.93.1
+    image: homeassistant/raspberrypi3-homeassistant:0.95.4
     devices:
       - "/dev/serial/by-id/usb-0658_0200-if00:/dev/zwave"
     network_mode: "host"
