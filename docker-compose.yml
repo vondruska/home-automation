@@ -21,7 +21,7 @@ services:
 
 
   homeassistant:
-    image: homeassistant/raspberrypi3-homeassistant:0.98.1
+    image: homeassistant/raspberrypi3-homeassistant:0.99.2
     devices:
       - "/dev/serial/by-id/usb-0658_0200-if00:/dev/zwave"
     network_mode: "host"
