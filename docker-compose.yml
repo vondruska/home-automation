@@ -52,7 +52,7 @@ services:
       WEBHOOK_SCRIPT: "/scripts/hook.sh"
       GIT_PASSWORD:
       GIT_USERNAME:
-      GIT_HOST: "gitlab.com"
+      GIT_HOST: "github.com"
       HOME_ASSISTANT_URL:
     ports:
       - "9080:9080"
