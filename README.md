@@ -2,7 +2,7 @@
 
 There is a decent amount of home automation running at the Vondruska house. I've gotten quite a few inquries on everything that is running. I try to keep this document updated as much as possible.
 
-I use GitLab CI to build and deploy as needed.
+I use [GitHub Actions](https://github.com/actions) to build and deploy as needed.
 
 
 ## Goals
@@ -41,7 +41,7 @@ Everything in this setup runs in a container. Running on a Raspberry Pi 3B+.
 
 Home Assistant is the central point where all IoT endpoints integrate with. Essentially the IoT hub.
 
-Configuration is source controlled and uses GitLab CI to test the configuration before it gets pulled into instance. I'll open source the configuration soon.
+Configuration is source controlled and uses GitHub Actions to test the configuration before it gets pulled into instance. I'll open source the configuration soon.
 
 ### [Node-Red](https://nodered.org/)
 
