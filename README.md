@@ -23,6 +23,7 @@ No 100% reliance on cloud services unless absolutely necessary. Operations shoul
 1. [RTL-SDR Blog V3 R820T2 RTL2832U](https://www.amazon.com/gp/product/B011HVUEME)
 1. [Tempy](#tempy)
 1. Ecovacs Deebot N79S
+1. [OpenGarage](https://opengarage.io/)
 
 Obtained but not integrated:
 1. GE Z-Wave Dimmer Switch
