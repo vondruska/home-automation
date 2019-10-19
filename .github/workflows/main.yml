@@ -1,0 +1,17 @@
+name: CI
+
+on:
+  push:
+    paths-ignore:
+    - '*.md'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v1
+    - name: Validate docker-compose
+      run: docker-compose config
