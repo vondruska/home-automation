@@ -13,5 +13,7 @@ jobs:
     steps:
     - name: Checkout Code
       uses: actions/checkout@v1
+    - name: Copy env
+      run: mv build/mqtt.env .
     - name: Validate docker-compose
       run: docker-compose config
