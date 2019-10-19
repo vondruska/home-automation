@@ -18,4 +18,4 @@ jobs:
     - name: Validate docker-compose
       run: docker-compose config
     - name: Shellcheck
-      run: Shellcheck ./scripts/*.sh
+      run: shellcheck ./scripts/*.sh
