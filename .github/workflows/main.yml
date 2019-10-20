@@ -17,3 +17,5 @@ jobs:
       run: mv build/mqtt.env .
     - name: Validate docker-compose
       run: docker-compose config
+    - name: Shellcheck
+      run: shellcheck ./scripts/*.sh
