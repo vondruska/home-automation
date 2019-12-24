@@ -31,13 +31,11 @@ services:
     restart: unless-stopped
 
   nodered:
-    image: raymondmm/node-red:latest
+    image: nodered/node-red:latest
     environment:
       - TZ=US/Eastern
     volumes:
       - "/opt/nodered:/data"
-      - "/etc/timezone:/etc/timezone:ro"
-#      - "/etc/localtime:/etc/localtime:ro"
     ports:
       - "1880:1880"
     user: "1000:1000"
@@ -61,3 +59,11 @@ services:
       - /opt/homeassistant:/homeassistant
     user: "1001:1001"
     restart: unless-stopped
+
+  nut:
+    image: vondruska/nut-upsd
+    restart: unless-stopped
+    ports:
+      - "3493:3493"
+    devices:
+      - "/dev/bus/usb:/dev/bus/usb"
