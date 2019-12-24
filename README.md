@@ -2,7 +2,7 @@
 
 There is a decent amount of home automation running at the Vondruska house. I've gotten quite a few inquries on everything that is running. I try to keep this document updated as much as possible.
 
-I use GitLab CI to build and deploy as needed.
+I use [GitHub Actions](https://github.com/actions) to build and deploy as needed.
 
 
 ## Goals
@@ -23,6 +23,7 @@ No 100% reliance on cloud services unless absolutely necessary. Operations shoul
 1. [RTL-SDR Blog V3 R820T2 RTL2832U](https://www.amazon.com/gp/product/B011HVUEME)
 1. [Tempy](#tempy)
 1. Ecovacs Deebot N79S
+1. [OpenGarage](https://opengarage.io/)
 
 Obtained but not integrated:
 1. GE Z-Wave Dimmer Switch
@@ -41,7 +42,7 @@ Everything in this setup runs in a container. Running on a Raspberry Pi 3B+.
 
 Home Assistant is the central point where all IoT endpoints integrate with. Essentially the IoT hub.
 
-Configuration is source controlled and uses GitLab CI to test the configuration before it gets pulled into instance. I'll open source the configuration soon.
+Configuration is source controlled and uses GitHub Actions to test the configuration before it gets pulled into instance. I'll open source the configuration soon.
 
 ### [Node-Red](https://nodered.org/)
 

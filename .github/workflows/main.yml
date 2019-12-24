@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+    paths-ignore:
+    - '*.md'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v1
+    - name: Copy env
+      run: mv build/mqtt.env .
+    - name: Validate docker-compose
+      run: docker-compose config
+    - name: Shellcheck
+      run: shellcheck ./scripts/*.sh
