@@ -19,9 +19,8 @@ services:
       - "1883:1883"
     restart: unless-stopped
 
-
   homeassistant:
-    image: homeassistant/raspberrypi3-homeassistant:0.99.2
+    image: homeassistant/home-assistant:0.106.2
     devices:
       - "/dev/serial/by-id/usb-0658_0200-if00:/dev/zwave"
     network_mode: "host"
@@ -67,3 +66,5 @@ services:
       - "3493:3493"
     devices:
       - "/dev/bus/usb:/dev/bus/usb"
+
+  
