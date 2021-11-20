@@ -1,5 +1,13 @@
 # Home Automation
 
+---
+**NOTE**
+
+The scripts and actions have been sunset as Home Assistant has built in flows for nearly all of this now. See https://stevenvondruska.com/home-automation for an updated list of devices and services used for home automation.
+
+---
+
+
 There is a decent amount of home automation running at the Vondruska house. I've gotten quite a few inquries on everything that is running. I try to keep this document updated as much as possible.
 
 I use [GitHub Actions](https://github.com/actions) to build and deploy as needed.
